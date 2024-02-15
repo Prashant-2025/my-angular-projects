@@ -1,0 +1,51 @@
+<!-- String Interpolation -->
+<!-- <p>My name is {{dynName}}</p>
+<br><br>
+{{5*6}}
+<br><br>
+{{"welcome "+ dynName}}
+<br><br>
+{{dynName.length}}
+<br><br>
+{{dynName.toUpperCase()}}
+<br><br>
+{{myMethod()}} -->
+
+<!-- Property Binding -->
+<!-- <input type="text" [disabled]="false" name="" id="" [value]="dynName">
+<br><br>
+<input type="text" [hidden]="true" name="" id="" bind-value="dynName"> -->
+
+<!-- disabled and hidden are two properties in which string intrepolation doesn't work for these we have to use property binding -->
+
+<!-- Class and Style Binding -->
+<!-- <div class="box" [class.myClass]="true">Class Binding</div>  Class has Binded -->
+
+<!-- <div class="box" [style.margin]="myStyle">Style Binding</div>  Style has Binded -->
+
+<!-- ngClass Property: It is used basically to use multiple classes in any element -->
+<!-- <div class="box" [ngClass]="mltClasses">Style Binding</div>   -->
+
+<!-- ngStyle Property -->
+<!-- <div class="box" [ngStyle]="mltStyle">Style Binding</div>   -->
+
+
+<!-- Event Binding -->
+<!-- <button (click)="addToCart()">Add to Cart</button>
+<br><br>
+<p>{{message}}</p> -->
+
+<!-- <input type="text" name="" id="" value="myinput" (click)="onInputClick($event)"> -->
+
+
+<!-- Local Reference Variable/Template Reference Variable : This variable is used as a reference for implementation of an event
+        on an element to access any other element -->
+<!-- <input #inputInfo type="text" name="Prashant" value="InputText">
+<button (click)="getInputInfo(inputInfo)">Get Info</button> -->
+
+
+<!--  -->
+<!-- Two Way Data Binding -->
+<input type="text" value="InputText" [(ngModel)]="username">
+<p>{{username}}</p>
+
